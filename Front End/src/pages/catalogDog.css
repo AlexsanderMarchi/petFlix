@@ -1,0 +1,44 @@
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+    min-height: 100vh; /* Altura mínima para preencher a tela inteira */
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    text-align: left;
+    flex-grow: 1; /* Permite que as seções cresçam para preencher o espaço disponível */
+  }
+  
+  .movie-list {
+    display: flex;
+    /* Removido max-height */
+  }
+  
+  .movie-poster {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+  }
+  
+  .movie-poster:last-child {
+    margin-right: 0;
+  }
+  
+  .movie-poster:hover {
+    transform: scale(1.05);
+  }
+  
+  .Titulo-section {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px; /* Adicione um espaço entre o cabeçalho e o título da seção */
+  }
+  

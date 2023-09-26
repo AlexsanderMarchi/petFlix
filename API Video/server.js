@@ -23,12 +23,33 @@ const bucketName = 'petflix-839d0.appspot.com'; // Substitua pelo nome do seu bu
 
 const pastaVideo = path.join(__dirname, "videos")
 
-app.get("/video", (req, res) => {
+app.get("/video/:id", (req, res) => {
+  const filmes = [
+    {
+      id: 1,
+      url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/Hakuna%20Matata.mp4?alt=media&token=c9500267-4f28-4d32-9b7c-193289611bce"
+    },
+    {
+      id: 2,
+      url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/Hakuna%20Matata.mp4?alt=media&token=c9500267-4f28-4d32-9b7c-193289611bce"
+    },
+    {
+      id: 3,
+      url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/Hakuna%20Matata.mp4?alt=media&token=c9500267-4f28-4d32-9b7c-193289611bce"
+    },
+    // Add more movies here
+  ];
 
-  const mensagem = "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/Hakuna%20Matata.mp4?alt=media&token=c9500267-4f28-4d32-9b7c-193289611bce"
-  res.status(200).json({ message: mensagem }); //tocar por urls publicos para poder usar no front
-  
-  // const arquivoDoStorage = "gs://petflix-839d0.appspot.com/Hakuna Matata.mp4"; // Substitua pelo caminho correto no Firebase Storage
+  const id = parseInt(req.params.id);
+  const movie = filmes.find((item) => item.id === id);
+
+  if (movie) {
+    res.status(200).json(movie);
+  } else {
+    res.status(404).json({ message: "Movie not found" });
+  }
+});
+// const arquivoDoStorage = "gs://petflix-839d0.appspot.com/Hakuna Matata.mp4"; // Substitua pelo caminho correto no Firebase Storage
   
   // const file = storage.bucket(bucketName).file(arquivoDoStorage);
   
@@ -57,10 +78,6 @@ app.get("/video", (req, res) => {
   //   console.error("Erro durante a verificação do arquivo:", error);
   //   res.status(500).send("Erro interno do servidor");
   // });
-
-});
-
-
 
 
 

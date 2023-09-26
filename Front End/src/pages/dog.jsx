@@ -1,41 +1,50 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import './dog.css';
 import PetflixHeader from '../../components/Header';
 
-function Home() {
+function Dog() {
   //const [video, setVideo] = useState('');
 
   //const video = `http://localhost:3000/video`
   const videoLocal = `http://localhost:3000/videoLocal`
-  const [message, setMessage] = useState('');
+  const [filme, setFilme] = useState({});
   
-
+  const { idFilme } = useParams()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/video');
+        const response = await fetch(`http://localhost:3000/video/${idFilme}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log(data.message);
-        setMessage(data.message);
+        console.log(data);
+        setFilme(data);
+
+        
+
       } catch (error) {
         console.error('Error fetching video:', error);
       }
     };
 
+    //      <PetflixHeader />
     fetchData();
   }, []);
 
+
+
+  const endereco = filme.url
+  console.log(endereco);
+
+
   return (
     <div>
-      <PetflixHeader />
-
-      {message && (
+      {filme && (
         <video controls width="500" height="300">
-          <source src={message} type="video/mp4" />
+          <source src={endereco} type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>
       )}
@@ -45,6 +54,6 @@ function Home() {
   );
 }
 
-export default Home;
+export default Dog;
 
 

@@ -22,7 +22,7 @@ body {
   width: 200px;
   height: 200px;
   position: absolute; 
-  top: -250px; 
+  top: -200px; 
   left: 50%; 
   transform: translateX(-50%); 
   z-index: 1; 

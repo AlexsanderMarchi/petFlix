@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './home.css';
 import PetflixHeader from '../../components/Header';
 
 function Home() {
   const [showDogTitle, setShowDogTitle] = useState(false);
   const [showCatTitle, setShowCatTitle] = useState(false);
+
+
 
   return (
     <div className='container'>
@@ -22,7 +25,9 @@ function Home() {
           className="image-container"
         >
           {showDogTitle && <div className='dogProfileTitle left'>Filmes para Cachorros</div>}
-          <img className="dogProfile" src="https://4.bp.blogspot.com/-4jc1F05WLQM/TZ-V-lhzwJI/AAAAAAAAADk/1M-_tZXxcbA/s1600/Treasure+04-08-11+026.jpg" alt="" />
+          <Link to={`/CatalogForDogs`}>
+            <img className="dogProfile" src="https://www.cnet.com/a/img/resize/20d6844768bd3f5f0df41deee97897423bcaf3c5/hub/2021/11/03/3c2a7d79-770e-4cfa-9847-66b3901fb5d7/c09.jpg?auto=webp&fit=crop&height=1200&width=1200" alt="" />
+          </Link>
         </div>
         <div
           onMouseEnter={() => setShowCatTitle(true)}
