@@ -1,0 +1,10 @@
+[
+    {
+        "nome": "filme 1",
+        "pasta": "videos/seuVideo.mp4"
+    },    
+    {
+        "nome": "filme 2",
+        "pasta": "videos/seuVideo2.mp4"
+    }
+]

@@ -1,0 +1,56 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .petflix-header {   
+    height: 100px;
+    width: 100%;  
+    background-color: #222;
+  
+  }
+  
+  .button-row{
+  
+    padding: 30px;
+  }
+  .petflix-button-sign-in {
+    
+  }
+  
+  
+  
+  .petflix-logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  
+  }
+  
+  .menu-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .petflix-sign-in {  
+    background-color: red; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+  
+  
+  }
+  
+  .petflix-sign-in:hover {
+    background-color: #e50914;  
+  
+  }
+  
