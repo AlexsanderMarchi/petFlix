@@ -5,7 +5,7 @@ const { initializeApp } = require("firebase/app");
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC-YAW1n9NbVbAsgf1bw8q00cIXUPtVSdo",
+  apiKey: "",
   authDomain: "petflix-839d0.firebaseapp.com",
   projectId: "petflix-839d0",
   storageBucket: "petflix-839d0.appspot.com",

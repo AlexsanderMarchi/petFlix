@@ -1,56 +1,76 @@
+body {
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  .petflix-header {   
-    height: 100px;
-    width: 100%;  
-    background-color: #222;
-  
-  }
-  
-  .button-row{
-  
-    padding: 30px;
-  }
-  .petflix-button-sign-in {
-    
-  }
-  
-  
-  
-  .petflix-logo {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-  
-  }
-  
-  .menu-itens {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  .petflix-sign-in {  
-    background-color: red; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 20px;
-  
-  
-  }
-  
-  .petflix-sign-in:hover {
-    background-color: #e50914;  
-  
-  }
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative; 
+  text-align: center; 
+}
+
+.petflix-logo {
+  width: 200px;
+  height: 200px;
+  position: absolute; 
+  top: -250px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1; 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogProfile,
+.catProfile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.dogProfile:hover,
+.catProfile:hover {
+  transform: scale(1.1);
+}
+
+.image-item {
+  position: relative;
+}
+
+.left,
+.right {
+  position: absolute;
+  color: white;
+  padding: 5px;
+  font-size: 24px; 
+  font-family: 'Arial', sans-serif; 
+  white-space: nowrap;
+}
+
+.left {
+  left: 200px; 
+}
+
+.right {
+  right: 200px;
+}
+
+
+
+
+
