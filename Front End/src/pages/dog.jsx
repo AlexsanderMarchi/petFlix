@@ -23,7 +23,8 @@ function Dog() {
         console.log(data);
         setFilme(data);
 
-        
+        const endereco = filme.url;
+        console.log("endereço 1: "+endereco);
 
       } catch (error) {
         console.error('Error fetching video:', error);
@@ -35,16 +36,16 @@ function Dog() {
   }, []);
 
 
-
-  const endereco = filme.url
-  console.log(endereco);
+  const endereco2 = filme.url;
+  console.log("endereço 2: "+endereco2);
 
 
   return (
     <div>
+      <h1>{filme.url}</h1>
       {filme && (
         <video controls width="500" height="300">
-          <source src={endereco} type="video/mp4" />
+          <source src={filme.url} type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>
       )}
