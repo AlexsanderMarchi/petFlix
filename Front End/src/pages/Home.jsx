@@ -35,7 +35,9 @@ function Home() {
           className="image-container"
         >
           {showCatTitle && <div className='dogProfileTitle right'>Filmes para Gatos</div>}
-          <img className="catProfile" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2013%2F05%2Fb31.jpg&q=60" alt="" />
+          <Link to={`/CatalogForCats`}>
+            <img className="catProfile" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2013%2F05%2Fb31.jpg&q=60" alt="" />
+          </Link>
         </div>
       </div>
     </div>

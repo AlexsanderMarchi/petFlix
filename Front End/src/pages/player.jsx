@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './dog.css';
+import './player.css';
 import PetflixHeader from '../../components/Header';
 
-function Dog() {
+function Player() {
   //const [video, setVideo] = useState('');
 
   //const video = `http://localhost:3000/video`
@@ -55,6 +55,6 @@ function Dog() {
   );
 }
 
-export default Dog;
+export default Player;
 
 
