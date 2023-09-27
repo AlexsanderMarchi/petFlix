@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './home.css';
 import dogZao from '../assets/dogZao.png';
+import catZao from '../assets/catZao.png'
 
 function Home() {
   const [showDogTitle, setShowDogTitle] = useState(false);
@@ -36,7 +37,7 @@ function Home() {
         >
           {showCatTitle && <div className='dogProfileTitle right'>Filmes para Gatos</div>}
           <Link to={`/CatalogForCats`}>
-            <img className="catProfile" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2013%2F05%2Fb31.jpg&q=60" alt="" />
+            <img className="catProfile" src={catZao} alt="" />
           </Link>
         </div>
       </div>

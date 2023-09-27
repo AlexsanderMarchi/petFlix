@@ -74,29 +74,54 @@ const movies = [
 },
 {
   id: 15,
-  nome: "",
-  url: ""
+  nome: "Garfield Live Action",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/GarfieldLiveAction.mp4?alt=media&token=91d3564f-196c-451f-b70b-b1983a80d093&_gl=1*18i8i95*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDYyMS4xMS4wLjA."
 },
 {
   id: 16,
-  nome: "",
-  url: ""
+  nome: "Cat Vs Dogs",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/CatXdog.mp4?alt=media&token=d93fcccd-0cf1-44c9-a06b-56c487fdbd6f&_gl=1*j4n69v*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDc0Ny4yMy4wLjA."
 },
 {
   id: 17,
-  nome: "",
-  url: ""
+  nome: "Drawing Cats",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/CatDraws.mp4?alt=media&token=b43d24e4-1ac4-4b8a-b5b0-971dc681393b&_gl=1*e9er6y*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDgxMC42MC4wLjA."
 },
 {
   id: 18,
-  nome: "",
-  url: ""
+  nome: "Garfield Cartoon",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/GarfieldCartoon.mp4?alt=media&token=b41d6173-3279-44ee-9167-1dd81d75f463&_gl=1*1qwvngl*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDcxMC42MC4wLjA."
 },
 //calming videos for cats
 {
   id: 19,
-  nome: "Quatro Vidas De Um Cachorro",
-  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/Quatro%20Vidas%20De%20Um%20Cachorro.mp4?alt=media&token=213ed491-0854-49e6-b9ee-be8f1cafdb59"
+  nome: "Relaxing Videos for Cats 2",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/RelaxingCatVideo2.mp4?alt=media&token=d0c23ac2-1ce5-497c-8a33-a873018d29e4&_gl=1*3nakkp*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDkyMy4zNi4wLjA."
+},
+{
+  id: 20,
+  nome: "Relaxing Videos for Cats",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/RelaxingCatVideo.mp4?alt=media&token=1849fef1-1de2-4363-bcaa-c255ef16a860&_gl=1*sy0noc*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDkwMS41OC4wLjA."
+},
+{
+  id: 21,
+  nome: "Cat Routine When Everyone Is Sleeping",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/catNightRoutine.mp4?alt=media&token=92248c68-09dd-496e-a596-200fc79715ca&_gl=1*u3cxiu*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNjMyNi41OS4wLjA."
+},
+{
+  id: 22,
+  nome: "Cat Purring ",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/catPurring.mp4?alt=media&token=ab64500c-2f02-4e42-ab65-e42c021340d3&_gl=1*8a5gfa*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNjM4MC41LjAuMA.."
+},
+{
+  id: 23,
+  nome: "Becoming Friend of a Cat",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/BeingCatFriend.mp4?alt=media&token=071f2743-1449-4846-8702-d2f0d7471773&_gl=1*1e93v0n*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNDk3NS42MC4wLjA."
+},
+{
+  id: 24,
+  nome: "Cat Noise",
+  url: "https://firebasestorage.googleapis.com/v0/b/petflix-839d0.appspot.com/o/catNoise.mp4?alt=media&token=23d91f44-9e80-44df-9385-380a6aaf6186&_gl=1*1sopswz*_ga*MTMyMjIwMjE3Ni4xNjk1MzE0ODQ2*_ga_CW55HF8NVT*MTY5NTgzNDQyNi45LjEuMTY5NTgzNjQxMi42MC4wLjA."
 },];
 module.exports = movies
 

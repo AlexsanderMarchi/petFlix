@@ -7,34 +7,34 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 //Movie Posters
 import ohLongJohnson from "../assets/ohLongJohnson.jpg";
 import catAurea from "../assets/catAurea.jpg";
-import marleyEeu from "../assets/marleyEeu.jpeg";
-import semFloresta from "../assets/semFloresta.jpg";
-import cachorroDancante from "../assets/cachorroDancante.jpg";
-import calmDog from "../assets/calmDog.jpg";
-import cuteDog from "../assets/cuteDog.jpg";
-import dogDreaming from "../assets/dogDreaming.png";
-import dogFails from "../assets/dogFails.jpg";
-import tiltHead from "../assets/tiltHead.png";
-import shower from "../assets/shower.jpg";
-import quatroVidas from "../assets/quatroVidas.jpg";
+import garfieldMovie from "../assets/GarfieldMovie.jpg";
+import catXdog from "../assets/catXdog.jpg";
+import drawingCat from "../assets/DrawingCat.jpg";
+import garfieldCartoon from "../assets/GarfieldCartoon.jpg";
+import relaxingCat2 from "../assets/relaxingCat2.jpg";
+import relaxingCat from "../assets/relaxingCat.jpg";
+import catNight from "../assets/catNight.jpg";
+import catPurring from "../assets/catPurring.jpg";
+import catFriend from "../assets/catFriend.jpg";
+import catNoise from "../assets/catNoise.jpg";
 
 function CatCatalog() {
     const [animatedMovies, setAnimatedMovies] = useState([
         catAurea,
         ohLongJohnson,
-        dogFails,
-        shower,
-        semFloresta,
-        cachorroDancante,
+        garfieldMovie,
+        catXdog,
+        drawingCat,
+        garfieldCartoon,
     ]);
 
     const [calmingMovies, setCalmingMovies] = useState([
-        dogDreaming,
-        tiltHead,
-        calmDog,
-        cuteDog,
-        marleyEeu,
-        quatroVidas,
+        relaxingCat2,
+        relaxingCat,
+        catNight,
+        catPurring,
+        catFriend,
+        catNoise,
 
     ]);
 
