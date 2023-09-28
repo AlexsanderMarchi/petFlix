@@ -32,7 +32,7 @@ function Player() {
   }, [idFilme]);
   
   return (
-    <div>
+    <div className="player-container">
       {filme && (
         <video controls width="500" height="300">
           <source src={filme.url} type="video/mp4" />
@@ -45,5 +45,3 @@ function Player() {
 }
 
 export default Player;
-
-

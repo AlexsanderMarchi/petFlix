@@ -44,6 +44,13 @@
   
   
   }
+
+  .player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   
   .petflix-sign-in:hover {
     background-color: #e50914;  
