@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import './player.css';
-import PetflixHeader from '../../components/Header';
 
 function Player() {
-  //const [video, setVideo] = useState('');
 
-  //const video = `http://localhost:3000/video`
   const videoLocal = `http://localhost:3000/videoLocal`
   const [filme, setFilme] = useState(null);
+
 
   
   const { idFilme } = useParams()
@@ -30,11 +31,14 @@ function Player() {
   
     fetchData();
   }, [idFilme]);
-  
+
   return (
     <div className="player-container">
+      <Link to="/CatalogForDogs" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+      </Link>
       {filme && (
-        <video controls width="500" height="300">
+        <video controls width="950" height="500">
           <source src={filme.url} type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>

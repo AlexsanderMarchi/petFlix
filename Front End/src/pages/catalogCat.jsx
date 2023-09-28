@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './catalogStyle.css';
 import '../index.css';
-import PetflixHeader from '../../components/Header';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import soundFile from "../assets/catSong.mp3";
+
 //Movie Posters
 import ohLongJohnson from "../assets/ohLongJohnson.jpg";
 import catAurea from "../assets/catAurea.jpg";
@@ -39,11 +39,40 @@ function CatCatalog() {
         catNoise,
     ]);
 
+    const [playSound, setPlaySound] = useState(false);
+    
+    
+    const playAudio = () => {
+        const audio = new Audio(soundFile);
+        audio.play();
+    };
+
+    useEffect(() => {
+        
+        const intervalId = setInterval(() => {
+            setPlaySound(true);
+        }, 5000);
+
+        return () => {
+            clearInterval(intervalId); 
+        };
+    }, []);
+
+   
+    useEffect(() => {
+        if (playSound) {
+            playAudio();
+            setPlaySound(false);
+        }
+    }, [playSound]);
+
+
+
     return (
         <>
             <div className="catalog-container">
                 <Link to="/" className="back-button">
-                    <FontAwesomeIcon icon={faArrowLeft} /> {/* Ícone de seta para a esquerda */}
+                    <FontAwesomeIcon icon={faArrowLeft} />
                 </Link>
                 <div className="section">
                     <h1 className='Titulo-section'>Filmes Animados para Gatos</h1>

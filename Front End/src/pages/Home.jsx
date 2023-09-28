@@ -1,12 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import './home.css';
 import dogZao from '../assets/dogZao.png';
 import catZao from '../assets/catZao.png';
+import soundFile from "../assets/parkSound.mp3";
 
 function Home() {
-  const [showDogTitle, setShowDogTitle] = useState(false);
-  const [showCatTitle, setShowCatTitle] = useState(false);
+
+  const [playSound, setPlaySound] = useState(false);
+    
+    // Função para reproduzir o som
+    const playAudio = () => {
+        const audio = new Audio(soundFile);
+        audio.play();
+    };
+
+    useEffect(() => {
+        
+        const intervalId = setInterval(() => {
+            setPlaySound(true); 
+        }, 21000); 
+
+        return () => {
+            clearInterval(intervalId); 
+        };
+    }, []);
+
+    
+    useEffect(() => {
+        if (playSound) {
+            playAudio();
+            setPlaySound(false); 
+        }
+    }, [playSound]);
+
+
 
   return (
     <>
