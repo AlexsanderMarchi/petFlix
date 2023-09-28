@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './catalogStyle.css';
-import '../index.css'
+import '../index.css';
 import PetflixHeader from '../../components/Header';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 //Movie Posters
 import ohLongJohnson from "../assets/ohLongJohnson.jpg";
@@ -35,15 +37,15 @@ function CatCatalog() {
         catPurring,
         catFriend,
         catNoise,
-
     ]);
-
 
     return (
         <>
             <div className="catalog-container">
+                <Link to="/" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} /> {/* Ícone de seta para a esquerda */}
+                </Link>
                 <div className="section">
-
                     <h1 className='Titulo-section'>Filmes Animados para Gatos</h1>
                     <div className="movie-list">
                         {animatedMovies.map((movie, index) => (
@@ -57,7 +59,6 @@ function CatCatalog() {
                         ))}
                     </div>
                 </div>
-
                 <div className="section">
                     <h1 className='Titulo-section'>Filmes Calmos para Gatos</h1>
                     <div className="movie-list">

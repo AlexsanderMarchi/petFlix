@@ -1,3 +1,6 @@
+* {
+  text-decoration: none;
+}
 .catalog-container {
     display: flex;
     flex-direction: column;
@@ -12,7 +15,28 @@
     text-align: left;
     flex-grow: 1;
   }
-  
+
+  .back-button:hover{
+    color: red;
+  }
+
+.back-button {
+  position: absolute;
+  top: 20px; /* Ajuste a posição vertical conforme necessário */
+  left: 20px; /* Ajuste a posição horizontal conforme necessário */
+  font-size: 24px; /* Tamanho do ícone */
+  color: white; /* Cor do ícone */
+  text-decoration: none; /* Remova o sublinhado */
+}
+
+/* Estilização para o ícone de volta */
+.back-icon {
+  margin-right: 10px; /* Espaço entre o ícone e o texto (ajuste conforme necessário) */
+}
+
+
+
+
   .movie-list {
     display: flex;
   }
