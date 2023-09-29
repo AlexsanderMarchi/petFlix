@@ -1,8 +1,19 @@
-# React + Vite
+# Front End in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Some pictures of the pages working:
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="../homePage.png" alt="homePage"/>
+  <br>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="./public/catPage.png" alt="catPage"/>
+  <br>
+</p>
+
+<p align="center">
+  <img src="./public/playerPage.png" alt="playerPage"/>
+  <br>
+</p>
+
