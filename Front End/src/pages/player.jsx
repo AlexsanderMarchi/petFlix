@@ -7,7 +7,7 @@ import './player.css';
 
 function Player() {
 
-  const videoLocal = `http://localhost:3000/videoLocal`
+  const videoLocal = `https://apipetflix.onrender.com/videoLocal`
   const [filme, setFilme] = useState(null);
 
 
@@ -17,7 +17,7 @@ function Player() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/video/${idFilme}`);
+        const response = await fetch(`https://apipetflix.onrender.com/video/${idFilme}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
