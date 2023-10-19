@@ -22,9 +22,7 @@ function Home() {
             setPlaySound(true); 
         }, 21000); 
 
-        return () => {
-            clearInterval(intervalId); 
-        };
+        
     }, []);
 
     
