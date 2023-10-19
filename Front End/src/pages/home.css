@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -92,4 +93,42 @@ body {
   display: flex;
   justify-content: center;
   text-align: center  ;
+}
+
+
+@media (max-width : 500px)  {
+  .dogProfile,
+.catProfile {
+  border: 2px groove white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+
+@media (max-width : 380px)  {
+  .dogProfile,
+.catProfile {
+  border: 2px groove white;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 }

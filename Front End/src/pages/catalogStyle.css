@@ -21,13 +21,20 @@
   }
 
 .back-button {
-  position: absolute;
-  top: 20px; /* Ajuste a posição vertical conforme necessário */
-  left: 20px; /* Ajuste a posição horizontal conforme necessário */
-  font-size: 24px; /* Tamanho do ícone */
-  color: white; /* Cor do ícone */
-  text-decoration: none; /* Remova o sublinhado */
+
 }
+
+
+@media (max-width : 500px)  {
+  .back-button {
+  
+  }
+  
+   
+
+}
+
+
 
 /* Estilização para o ícone de volta */
 .back-icon {
@@ -39,8 +46,20 @@
 
   .movie-list {
     display: flex;
+    flex-wrap: wrap;
   }
   
+
+  @media (max-width : 421px)  {
+    .movie-list {
+      display: flex;
+      justify-content: center;
+     }
+     
+ 
+  }
+
+
   .movie-poster {
     width: 170px;
     height: 150px;
@@ -68,3 +87,4 @@
   .movie-link {
     margin: 10px;
 }
+
