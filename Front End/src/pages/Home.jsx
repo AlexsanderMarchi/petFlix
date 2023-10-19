@@ -43,7 +43,7 @@ function Home() {
         <div className='logo-container'>
           <img
             className='petflix-logo1'
-            src='./public/siteLogo.png'
+            src='./siteLogo.png'
             alt='Petflix Logo'
           />
         </div>
