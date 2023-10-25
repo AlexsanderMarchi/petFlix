@@ -8,7 +8,7 @@ Hi, I'm [Alexsander Marchi Zunino](https://www.linkedin.com/in/alexsander-marchi
 - An high fidelity prototype Cypress tests apresentation;
 - Apresentation of the project to the class;
 
-Scan here to enter the site:
+Scan here to enter the site: [pet-flix-henna.vercel.app/](pet-flix-henna.vercel.app/)
 
 <p align="center">
   <img src="qrCodeVercel.jpg" alt="qrCode"/>
