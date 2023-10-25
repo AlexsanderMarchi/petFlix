@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import './player.css';
 
-function Player() {
+function PlayerCat() {
   const videoRef = useRef(null);
   const { idFilme } = useParams();
   const videoLocal = `https://apipetflix.onrender.com/videoLocal`;
@@ -28,24 +28,12 @@ function Player() {
 
     fetchData();
 
-    // // Entrar em tela cheia quando o vídeo estiver pronto
-    // if (videoRef.current) {
-    //   videoRef.current.addEventListener('loadeddata', () => {
-    //     if (videoRef.current.requestFullscreen) {
-    //       videoRef.current.requestFullscreen();
-    //     } else if (videoRef.current.mozRequestFullScreen) {
-    //       videoRef.current.mozRequestFullScreen();
-    //     } else if (videoRef.current.webkitRequestFullscreen) {
-    //       videoRef.current.webkitRequestFullscreen();
-    //     }
-    //   });
-    // }
 
   }, [idFilme]);
 
   return (
     <div className="player-container">
-      <Link to="/CatalogForDogs" className="back-button">
+      <Link to="/CatalogForCats" className="back-button">
         <FontAwesomeIcon icon={faArrowLeft} />
       </Link>
       {filme && (
@@ -58,4 +46,4 @@ function Player() {
   );
 }
 
-export default Player;
+export default PlayerCat;

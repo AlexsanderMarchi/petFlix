@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(to bottom, #080808, #060130);
-    /* //background-attachment: fixed; Mantém o fundo fixo durante a rolagem */
+    background-attachment: fixed;
     height: 100vh;
 
 }

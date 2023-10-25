@@ -8,6 +8,14 @@ Hi, I'm [Alexsander Marchi Zunino](https://www.linkedin.com/in/alexsander-marchi
 - An high fidelity prototype Cypress tests apresentation;
 - Apresentation of the project to the class;
 
+Scan here to enter the site:
+
+<p align="center">
+  <img src="qrCodeVercel.jpg" alt="qrCode"/>
+  <br>
+</p>
+
+
 We used Firebase Storage to save the videos. In the API, that was developed in the MVC model, it's created an object array that the front
 take through a request. This project was developed with my classmate [Vitor Hugo](https://github.com/vitorhugodsouzax):
 

@@ -68,6 +68,19 @@
     transition: transform 0.2s ease-in-out;
     justify-content: "space-between";
   }
+
+  @media (max-width : 466px)  {
+     .movie-poster {
+    width: 120px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    justify-content: "space-between";
+  }
+     
+ 
+  }
   
   .movie-poster:last-child {
     margin-right: 0;

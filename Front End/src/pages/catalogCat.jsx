@@ -78,7 +78,7 @@ function CatCatalog() {
                     <h1 className='Titulo-section'>Filmes Animados para Gatos</h1>
                     <div className="movie-list">
                         {animatedMovies.map((movie, index) => (
-                            <Link to={`/CatalogForDogs/${index + 13}`} key={index} className="movie-link">
+                            <Link to={`/CatalogForCats/${index + 13}`} key={index} className="movie-link">
                                 <img
                                     className="movie-poster"
                                     src={movie}
@@ -92,7 +92,7 @@ function CatCatalog() {
                     <h1 className='Titulo-section'>Filmes Calmos para Gatos</h1>
                     <div className="movie-list">
                         {calmingMovies.map((movie, index) => (
-                            <Link to={`/CatalogForDogs/${index + 19}`} key={index} className="movie-link">
+                            <Link to={`/CatalogForCats/${index + 19}`} key={index} className="movie-link">
                                 <img
                                     className="movie-poster"
                                     src={movie}

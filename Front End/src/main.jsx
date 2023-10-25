@@ -7,11 +7,13 @@ import DogCatalog from './pages/catalogDog'
 import Dog from './pages/player'
 import CatCatalog from './pages/catalogCat'
 import Player from './pages/player'
+import PlayerCat from './pages/playerCat'
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/CatalogForDogs', element: <DogCatalog /> },
   { path: '/CatalogForDogs/:idFilme', element: <Player /> },
+  { path: '/CatalogForCats/:idFilme', element: <PlayerCat /> },
   { path: '/CatalogForCats', element: <CatCatalog /> }
 ]);
 
